@@ -1,0 +1,5 @@
+PersistentContext
+VEnv
+__pycache__
+*.csv
+*.apkg
