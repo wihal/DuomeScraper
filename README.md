@@ -1,18 +1,14 @@
-# DuomeScraper
+# DuoScraper
 <center>
   <img src="https://i.postimg.cc/W14rPY3b/Duolingo-In-Love-With-Anki.png" width="200" height="150">
 </center>
 
-This project scrapes the Italian words (& any other languages available on Duolingo) from the Duome website (https://duome.eu/vocabulary/en/it) using Playwright, then it downloads phonetics from GoogleTextToSpeech (gTTS) & creates Anki flashcards.
+This project scrapes any languages available on Duolingo from the Duome website (https://duome.eu/vocabulary) using Playwright & creates a csv file
 
 
 
-https://github.com/411A/DuomeScraper/assets/13054619/959fcb05-f63d-4b61-b867-1ef31d19aa87
+## 🔨 How to run
 
-<details>
-  <summary>
-    <b><h3>🔰</h3>How to run</b>
-  </summary>
 
   <ol start="0">
   <li>Download <code>main.py</code> &amp; <code>requirements.txt</code> and put them inside a folder</li>
@@ -40,19 +36,18 @@ https://github.com/411A/DuomeScraper/assets/13054619/959fcb05-f63d-4b61-b867-1ef
     <pre><code>playwright install &amp;&amp; playwright install msedge
     </code></pre>
   </li>
-  <li>Read the code, you may need to personalize some variables, then run the <code>main.py</code> & wait to get the final <code>.apkg</code> file</li>
+  <li>Read the code, you may need to personalize some variables, then run the <code>main.py</code> & wait to get the final <code>.csv</code> file</li>
   <li>
     Open Anki application...<br>
-    On Android: From top-right, click on <b>⋮</b> and select <b>Import</b> ➡️ <b>Deck package (.apkg)</b><br>
-    On Desktop: <b>File</b> ➡️ <b>Import...</b> ➡️ Choose .apkg file
+    On Android: From top-right, click on <b>⋮</b> and select <b>Import</b><br>
+    On Desktop: <b>File</b> ➡️ <b>Import...</b> ➡️ Choose .csv file
   </li>
 </ol>
 
 </details>
 
----
 
-##### ⚠️ Known (possible) issues
-- [ ] If all word elements didn't load all at once, we should scroll down to retrieve all the words. However, this feature has not been implemented yet, as the website displays all words at once (all necessary elements are visible after load).
-- [ ] Some languages, like German, don't have definitions. When accessing the definition element, an exception may be raised.
+
+## ⚠️ Known (possible) issues
+- If all word elements didn't load all at once, we should scroll down to retrieve all the words. However, this feature has not been implemented yet, as the 
 
